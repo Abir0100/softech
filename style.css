@@ -1,86 +1,70 @@
-/* <div class="mt-5 d-flex gap-5">
-<div class="card" style="width: 18rem;">
-    <img src="https://softech.kg/image/cache/991347eacb7cf11a070812a3f034fdf2.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-        <h5 class="card-title">20 000 KGS</h5>
-        <h6 class="card-text">Redmi 13 Pro 4G (8/256) EU</h6>
-        <div class="d-flex justify-content-between">
-            <button class="btn btn-outline-info">
-                <i class="bi bi-cart3"></i>
-            </button>
-            <button class="btn btn-outline-info">
-                <i class="bi bi-heart"></i>
-            </button>
-            <button class="btn btn-outline-info">
-                <i class="bi bi-share"></i>
-            </button>
-            <button class="btn btn-outline-info">
-                <i class="bi bi-info-circle"></i>
-            </button>
-        </div>
-    </div>
-</div>
-<div class="card" style="width: 18rem;">
-  <img src="https://www.apple.com/newsroom/images/2024/09/apple-introduces-iphone-16-and-iphone-16-plus/article/geo/Apple-iPhone-16-hero-geo-240909_inline.jpg.large.jpg" class="card-img-top" alt="">
-  <div class="card-body">
-      <h5 class="card-title"> 160 000 KGS</h5>
-      <h6 class="card-text">iPhone 16 512 gb</h6>
-      <div class="d-flex justify-content-between">
-          <button class="btn btn-outline-info">
-              <i class="bi bi-cart3"></i>
-          </button>
-          <button class="btn btn-outline-info">
-              <i class="bi bi-heart"></i>
-          </button>
-          <button class="btn btn-outline-info">
-              <i class="bi bi-share"></i>
-          </button>
-          <button class="btn btn-outline-info">
-              <i class="bi bi-info-circle"></i>
-          </button>
-      </div>
-  </div>
-</div>
-<div class="card" style="width: 18rem;">
-<img src="https://cdn.dxomark.com/wp-content/uploads/medias/post-167690/Samsung-Galaxy-A55-5G_featured-image-packshot-review.jpg" class="card-img-top" alt="...">
-<div class="card-body">
-    <h5 class="card-title">30 990 KGS</h5>
-    <h6 class="card-text">Samsung Galaxy A55</h6>
-    <div class="d-flex justify-content-between">
-        <button class="btn btn-outline-info">
-            <i class="bi bi-cart3"></i>
-        </button>
-        <button class="btn btn-outline-info">
-            <i class="bi bi-heart"></i>
-        </button>
-        <button class="btn btn-outline-info">
-            <i class="bi bi-share"></i>
-        </button>
-        <button class="btn btn-outline-info">
-            <i class="bi bi-info-circle"></i>
-        </button>
-    </div>
-</div>
-</div>
-<div class="card" style="width: 18rem;">
-<img src="https://assets.hardwarezone.com/img/2023/09/apple-watch-ultra2-1.jpg" class="card-img-top" alt="..." >
-<div class="card-body">
-    <h5 class="card-title">53,200.06 KGS</h5>
-    <h6 class="card-text">Apple Watch Series 10</h6>
-    <div class="d-flex justify-content-between">
-        <button class="btn btn-outline-info">
-            <i class="bi bi-cart3"></i>
-        </button>
-        <button class="btn btn-outline-info">
-            <i class="bi bi-heart"></i>
-        </button>
-        <button class="btn btn-outline-info">
-            <i class="bi bi-share"></i>
-        </button>
-        <button class="btn btn-outline-info">
-            <i class="bi bi-info-circle"></i>
-        </button>
-    </div>
-</div>
-</div>
-</div> */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  .logo {
+      display: flex;
+      align-items: center;
+      img {
+          height: 60px;
+          margin-right: 10px;
+      }
+  }
+  .search-bar{
+      display: flex;
+      flex: 1;
+      margin: 0 20px;
+      max-width: 500px;
+      input {
+          width: 100%;
+          padding: 8px;
+          border: 1px solid #ccc;
+          border-radius: 4px 0 0 4px;
+      }
+      button {
+          background-color: #00c0d7;
+          border: none;
+          padding: 8px 12px;
+          color: #fff;
+          cursor: pointer;
+          transition: background-color 0.3s, box-shadow 0.3s;
+      }
+      button:hover {
+          background-color: #008b9a;
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      button:active {
+          background-color: gray;
+          transform: scale(0.95);
+      }
+  }
+  .user-section{
+      display: flex;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      .currency{
+          margin-right: 15px;
+      }
+      .user-icon-button {
+          background-color: #f8f8f8;
+          border: none;
+          color: #00c0d7;
+          font-size: 58px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          transition: background-color 0.3s, transform 0.1s; /* Плавный переход */
+      }
+      .user-icon-button:hover {color: gray;}
+      .user-icon-button:active {
+          transform: scale(0.95); /* Легкий эффект нажатия */
+          color: gray;
+      }
+  }
+}
